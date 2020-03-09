@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MyWeb</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initail-scale=1">
+        <link rel="stylesheet" href="css/stylesr.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- jQuery kód ide:-->
+        <script>
+            $(document).ready(function(){
+                $("article").hide();
+                $("#a1").show();
+                $("a").click(function(){
+                    var nav = $(this).index();
+                    $("a").removeClass("active");
+                    $(this).addClass("active");
+                    $("article").hide();
+                    if(nav == 0){
+                        $("#a1").show();
+                    }
+                    else if(nav == 4){
+                        $("#a3").show();
+                    }
+                    else
+                    $("#a"+(nav) + "").show();
+                }
+
+                );
+            }
+
+            );
+        </script>
+    </head>
+    <body>
+        <div id="wrapper"> 
+            <header>
+                <h1>Köszöntelek a <span>Rólam oldalon ;)</span></h1>
+            </header>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">&raquo;</a>
+            </div>
+            <nav>
+                <a href="#"><span>Rólam</span></a>
+                <a href="index.html">Főoldal</a> 
+                <a href="iskolam.html">Iskolám</a> 
+                <a href="hobbim.html">Hobbim</a>        
+            </nav>
+            <section>
+                <article id="a1">
+                    <figure>
+                        <h1>Szeretek a falumban élni, mert sok ismerősöm van</h1>
+                        <p>Ez az oldal alra szolgál, hogy meg is mertessem vetetek a falut a hol élek.</p>
+                        <img src="images/vilages.jpg" alt/>
+                    </figure>
+                    Herencsény az őskor óta lakott hely. Írott források 1322-ben említik először, majd az 1423-as dokumentumban az áll, hogy az esztergomi érsek a korábbi román stílusú templomot - valószínűleg a rotundát - kibővítette. Később a falunak több birtokosa volt. A török dúlás után ezek a birtokosok kisebb önálló településeket hoztak létre. Ilyen Vajdafalu, a Róth család telepítése, ilyen a Váras nevű településrész, amit a Ráday család szervezett, s amely később a „Kukorica Váras” nevet kapta a falu lakóitól, s ilyen a Gándor nevű falurész, melyet a Wattay család telepített be. A legrégebbi két településrész a Tiszttartósor és a Szemetszög. A település része Haraszti Puszta, amit az arra élők Harasztinak neveznek. Ezen a településrészen található a Haraszti pusztai templom, amit Török templomnak neveznek.
+                    A falu már az 1500-as években is foglalkozott szőlőtermesztéssel a búzatermesztés mellett. A környék tölgyeseiben makkoltatták a falu kondáját. A disznómakkos erdők a sertéstartásnak kedveztek. Az 1848-as jobbágyfelszabadítás után a földek fölaprózódtak, a falu lakosságának egy része cselédnek szegődött, napszámba járt, később pedig a környékbeli szénbányában talált munkát és megélhetést. A 20. század közepén, a 2. világháború után, termelőszövetkezet alakult. A rendszerváltás után pedig a kárpótlás nyomán elaprózott földeken kft.-k gazdálkodnak. A modern kori kenyérkereset egyik forrása a turizmus. A megalakult Palóc Út Szövetség ebben is segíti a település lakóit.
+                    Ismét előkerültek a népviseletek és az asszonyok egymás falvaiba járnak palóc díszben a búcsúba. A község határában fölállított Palócok Vigyázó Keresztje egy kis központtá tette a községet a palócok körében.
+                    A 21. században föllendült falusi turizmust a községben található népi építészeti emlékek is segítik. A község legnagyobb nevezetessége, kiemelkedő építészeti jelentőségű műemléke azonban a rotundából bővített katolikus templom. A mai templomnak a szentélye az egykori, román kori körtemplom, amelyet a 14. században építtetett ki a falu akkori földesura, az esztergomi érsek. A templom tornya későbbi építésű, a 18. században készült el. Ma pompásan fölújítva várja a látogatókat.
+                </article>
+                <article id="a2">
+                    <figure>
+                        <h1>Szeretek élni, mert sok mindent meg ismerek ami érdekel.</h1>
+                        <p>Ez az oldal alra szolgál, hogy megmutasam azt ami éltet engem.</p>
+                        <img src="images/myfoto.jpg" alt/>
+                    </figure>
+                    2003-ban szölettem Herencsényi lakos vagyok. Amióta az eszemet tudom a faluban élek és egy dolog kezdett el érdekelni.
+                    A mezőgazdaság eddig is imádtam nézni a gépeket ahogyan dolgoznak a földeken, de a mai napokban már kisegítőként dolgozom a kft-ben a suli mellett.
+                    A suliban az informatikát tanulom mert az a másik szenvedéjem.
+                    Már szinte a gazdaság a hobbimá vált már többet tudokróla mint aki benne dolgozik.
+                    Az informatikát azért választottam mert ezzel gyorsan sok pénzt keresni és ha felnövök szeretnék válalatot nyitni.
+                </article>
+                <article id="a3">
+                    <figure>
+                        <h1>Szeretek élni, mert sokat szeretek tanulni főleg azon a téren ami érdekel.</h1>
+                        <p>Ez az oldal alra szolgál, hogy megmutasam azt ami érdekel engem és foglalkozom vele.</p>
+                        <img src="images/myschool.jpg" alt/>
+                    </figure>
+                    
+                    A sulival úgy vagyok mint a legtöbb gyerek minek van, meg hogy ez csak idő pocsékolásnak tűnik, de ez nem így van ahoz legyen valamilyen szakod nagyon sokat kell tanulnod ahoz hogy remek szakember legyél. 
+                    <br>    
+                    A tanulásra annyi időt fordítanák mint a hobbimra kitűnő tanuló lehetnék, de nem eszt teszem ezért nem a legjobbak ajegyeim.
+                    Jó tanács fogadd meg tanulj amíg csak lehet.
+                </article>
+            </section>
+            <aside>
+                <h2>Ha <span>szeretnél</span> többet tudni rólam akkor kattints a linkekre!</h2>
+                <p>Pontosaban a fenti sávban található <span> -Főoldal, -Iskolám, -Hobbim </span> linkekre.
+                    Ezekben az oldalakban magamról számolokbe. Hogy egyáltalán ki is vagyok.
+                </p>
+                
+                <div class="clear"></div>
+            </aside>
+        </div>
+    </body>
+</html>

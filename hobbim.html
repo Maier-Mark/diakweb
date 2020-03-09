@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MyWeb</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initail-scale=1">
+        <link rel="stylesheet" href="css/stylesh.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- jQuery kód ide:-->
+        <script>
+            $(document).ready(function(){
+                $("article").hide();
+                $("#a1").show();
+                $("a").click(function(){
+                    var nav = $(this).index();
+                    $("a").removeClass("active");
+                    $(this).addClass("active");
+                    $("article").hide();
+                    if(nav == 0){
+                        $("#a1").show();
+                    }
+                    else if(nav == 4){
+                        $("#a3").show();
+                    }
+                    else
+                    $("#a"+(nav) + "").show();
+                }
+
+                );
+            }
+
+            );
+        </script>
+    </head>
+    <body>
+        <div id="wrapper"> 
+            <header>
+                <h1>Köszöntelek a <span>hobbim oldalon ;)</span></h1>
+            </header>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">&raquo;</a>
+            </div>
+            <nav>
+                <a href="#"><span>Hobbim</span></a>   
+                <a href="index.html">Fő oldal</a>   
+                <a href="rolam.html">Rólam</a> 
+                <a href="iskolam.html">Iskolám</a>         
+            </nav>
+            <section>
+                <article id="a1">
+                    <h1>Szeretek a hobbimnak élni, ez nekem a mindenem.</h1>
+                    <p>Ez az oldal alra szolgál, hogy az életem egy részét bemutasam nektek.</p>
+                    <figure>
+                      <img src="images/mf.jpg" alt/>
+                    </figure>
+                    <p>Amint már említettem, hogy van hobbim.<br>
+                        Most pedig mutatok róla egypár képet.
+                    </p>
+                   
+                            <figure>
+                                <img src="images/mf1.jpg" alt/>
+                                <p>második</p>
+                            </figure>
+                        
+                            <figure>
+                                <img src="images/mf2.jpg" alt/>
+                                <p>harmadik</p>
+                            </figure>
+                            <figure>
+                                <img src="images/mf4.jpg" alt/>
+                                <p>negyedik</p>
+                            </figure>
+                        
+                            <figure>
+                                <img src="images/mf5.jpg" alt/>
+                                <p>ötödik</p>
+                            </figure>
+                            <figure>
+                                <img src="images/mf6.jpg" alt/>
+                                <p>hatodik</p>
+                            </figure>
+                        
+                </article>
+                <article id="a2">
+                    <h1>Szeretném nektek bemutatni a kedvenc traktoromat.</h1>
+                    <p>Ez a szerkezet igen nagy súlyokat képes mozgatni akár a földben akárcsak vontatva.</p>
+                    <figure>
+                      <img src="images/mf.jpg" alt/>
+                    </figure>
+                    <p>Nagyon egyszereű vezetni,de a kezelése igazi fejtörő.<br>
+                        Annyira öszzetet mint egy pazül egy elem hiányzik nincs meg a teljes kép.
+                    </p>
+                </article>
+                <article id="a3">
+                    <h1>Szeretném nektek bemutatni a kedvenc kombájnomat.</h1>
+                    <p>Ez a szerkezet takarítja be a már aratásra érett terményeket.</p>
+                    <figure>
+                      <img src="images/mf4.jpg" alt/>
+                    </figure>
+                    <p>Ennek a szerekezete már érdekesebbmás vele fordulni mint egy traktorral.<br>
+                        Egy tipp ha még nem vezettél ilyet ne menny egyedül mert könnyen meg van a baj.<br>
+                        A leírás oldalt található! ->.
+                    </p>
+                </article>
+            </section>
+            <aside>
+                <h2>Ha <span>szeretnél</span> többet tudni rólam akkor kattints a linkekre!</h2>
+                <p>Pontosaban a fenti sávban található <span> -Fő oldal, -Rólam, -Iskolám </span>linkekre.
+                    Ezek azok a termények amikkel táplálko zunk.<br> -Búza <br> -Árpa <br> -Repce stb. <br> 
+                    Ezeket mind a gazdák termelik hogy mi ne éhezzünk.
+                </p>
+                
+                <div class="clear"></div>
+            </aside>
+        </div>
+    </body>
+</html>

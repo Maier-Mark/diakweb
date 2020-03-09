@@ -1,0 +1,94 @@
+!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MyWeb</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initail-scale=1">
+        <link rel="stylesheet" href="css/stylesh.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- jQuery kód ide:-->
+        <script>
+            $(document).ready(function(){
+                $("article").hide();
+                $("#a1").show();
+                $("a").click(function(){
+                    var nav = $(this).index();
+                    $("a").removeClass("active");
+                    $(this).addClass("active");
+                    $("article").hide();
+                    if(nav == 0){
+                        $("#a1").show();
+                    }
+                    else if(nav == 4){
+                        $("#a3").show();
+                    }
+                    else
+                    $("#a"+(nav) + "").show();
+                }
+
+                );
+            }
+
+            );
+        </script>
+    </head>
+    <body>
+        <div id="wrapper"> 
+            <header>
+                <h1>Az első teljes <span>weboldalam</span></h1>
+            </header>
+            <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a class="active" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">&raquo;</a>
+            </div>
+            <nav>
+                <a href="rolam.html">Rólam</a> 
+                <a href="iskolam.html">Iskolám</a> 
+                <a href="hobbim.html">Hobbim</a>        
+            </nav>
+            <section>
+                <article id="a1">
+                    <h1>Szeretettel köszöntelek a oldalamon.</h1>
+                    <p>Ez az oldal alra szolgál, hogy az életem egy részét bemutasam nektek.</p>
+                    <figure>
+                      <img src="images/.jpg" alt/>
+                    </figure>
+                    <p>Nagyon szeretem ezt a kis falut.<br>
+                        Amit Herencsénynek vagy röviden(Hercsénynek) hívnak.
+                    </p>
+                </article>
+                <article id="a2">
+                    <h1>Szeretettel köszöntelek a oldalamon.</h1>
+                    <p>Ez az oldal alra szolgál, hogy az életem egy részét bemutasam nektek.</p>
+                    <figure>
+                      <img src="images/.jpg" alt/>
+                    </figure>
+                    <p>Nagyon szeretem ezt a kis falut.<br>
+                        Amit Herencsénynek vagy röviden(Hercsénynek) hívnak.
+                    </p>
+                </article>
+                <article id="a3">
+                    <h1>Szeretettel köszöntelek a oldalamon.</h1>
+                    <p>Ez az oldal alra szolgál, hogy az életem egy részét bemutasam nektek.</p>
+                    <figure>
+                      <img src="images/.jpg" alt/>
+                    </figure>
+                    <p>Nagyon szeretem ezt a kis falut.<br>
+                        Amit Herencsénynek vagy röviden(Hercsénynek) hívnak.
+                    </p>
+                </article>
+            </section>
+            <aside>
+                <h2>Ha <span>szeretnél</span> többet tudni rólam akkor kattints a linkekre!</h2>
+                <p>Pontosaban a fenti sávban található -Rólam, -Iskolám, -Hobbim linkekre.
+                    Ezekben az oldalakban magamról számolokbe. Hogy egyáltalán ki is vagyok.
+                </p>
+                
+                <div class="clear"></div>
+            </aside>
+        </div>
+    </body>
+</html>

@@ -19,7 +19,7 @@ p{
     color: rgb(219, 151, 61);
 }
 p span{
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -45,7 +45,7 @@ header{
 
 }
 header span{
-    color: black;
+    color: rgb(114, 80, 8);
 }
 nav{
     padding:10px;
